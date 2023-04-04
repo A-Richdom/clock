@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    background-color: purple;
+    max-width: 700px;
+    height: 90vh;
+    margin: auto;
+}
+.box {
+    background-color: rgb(236, 235, 234);
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+    border: 20px solid black;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    z-index: 1;
+}
+.point {
+    background-color:rgb(230, 71, 19) ;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.longhand {
+    background-color: black;
+    width: 5px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    /* transform: rotate(450deg) */
+    transform-origin: 100%;
+
+    animation: clock linear infinite forwards 60s;
+
+}
+.shorthand {
+    background-color: black;
+    width: 5px;
+    height: 55px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: rotate(90deg);
+}
+.box-2 {
+    background-color: rgb(230, 71, 19);
+    width: 320px;
+    height: 320px;
+    border-radius: 70%;
+    position: absolute;
+    margin: auto;
+    top: 85px;
+    left: 38.2%;
+}
+.figure12 {
+    /* color:rgb(230, 71, 19) ; */
+    position: absolute;
+    left: 48%;
+    top:0%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.figure6 {
+    position: absolute;
+    left: 50%;
+    top:90%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.figure9 {
+    position: absolute;
+    left:2%;
+    top:45%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.figure3 {
+    position: absolute;
+    left:93%;
+    top:44%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+@keyframes clock {
+    to {
+        /* transform: rotate(360deg); */
+    }
+}
